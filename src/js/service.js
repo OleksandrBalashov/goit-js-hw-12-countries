@@ -21,7 +21,6 @@ export default {
                     return countryList(country);
                 };
 
-
                 return country;
             })
             .catch(error => console.log(error));
