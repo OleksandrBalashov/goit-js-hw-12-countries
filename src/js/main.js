@@ -4,11 +4,8 @@ import refs from './refs';
 import updateRef from './component';
 import { updateCountryMarkup } from './markup';
 
-
-
 refs.input.addEventListener('input', debounce(fetchCountriesHandler, 500));
 refs.country.addEventListener('click', fetchClickHandler);
-
 
 function fetchCountriesHandler(event) {
     service.searchQuery = event.target.value;
@@ -36,6 +33,5 @@ function updateMarkup() {
         .then(country => {
             updateCountryMarkup(country);
             updateRef.spinnerOff();
-        })
-        .catch(error => console.log(error));
+        });
 };

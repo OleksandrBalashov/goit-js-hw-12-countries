@@ -22,8 +22,7 @@ export default {
                 };
 
                 return country;
-            })
-            .catch(error => console.log(error));
+            });
     },
 };
 

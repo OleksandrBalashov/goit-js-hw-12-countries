@@ -4,7 +4,7 @@ import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
 import 'material-design-icons/iconfont/material-icons.css';
 
-defaults.delay = 1500
+defaults.delay = 1500;
 
 function errorEnter() {
     error({
